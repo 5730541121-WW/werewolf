@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Werewolf built using HTML5 canvas and WebSockets</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+  <h4>User</h4>
+
+  <form class="form-inline" id="reg-form">
+    <div class="form-group col-xs-3">
+      <label>Name:</label>
+      <input class="form-control" name="user" id="user" type="text">
+    </div>
+    <div class="form-group col-xs-3">
+      <label>RoomID:</label>
+      <input class="form-control" name="roomId" id="roomId" type="text">
+    </div>
+    <button type="submit" class="btn btn-primary btn-md" onclick="joinGame()">Join Game!</button>
+    <button type="submit" class="btn btn-primary btn-md" onclick="createNewRoom()" >Create Room!</button>
+  </form>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/login/login.js"></script>
+</body>
+</html>

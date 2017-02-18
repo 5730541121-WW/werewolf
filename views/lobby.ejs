@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>A multiplayer game built using HTML5 canvas and WebSockets</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/game.css">
+	</head>
+
+	<body>
+		<h4 id="user"> <%=user%> </h4>
+		<h4 id="roomId"> <%=roomId%> </h4>
+    <h4 id="status"> <%=status%> </h4>
+    <div>
+      <ul id="playerslist">
+      </ul>
+    </div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/Player.js"></script>
+		<script src="js/lobby/lobby.js"></script>
+		<script>
+			// Initialise the game
+			init();
+			showPlayers();
+		</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</body>
+</html>
